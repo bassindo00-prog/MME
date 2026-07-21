@@ -1,0 +1,3 @@
+[build]
+  base = "breakout"
+  command = "npm run build"
