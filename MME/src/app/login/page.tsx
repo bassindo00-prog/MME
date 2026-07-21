@@ -39,7 +39,7 @@ export default function LoginPage() {
               <Image src="/logo.png" alt="Break Out Logo" fill className="object-contain" priority />
             </div>
             <h1 className="text-2xl font-bold">Welcome Back</h1>
-            <p className="text-gray-400 text-sm mt-2">Login to your BREAKOUT.ID account</p>
+            <p className="text-gray-400 text-sm mt-2">Login to your MME Music account</p>
           </div>
 
           {error && (

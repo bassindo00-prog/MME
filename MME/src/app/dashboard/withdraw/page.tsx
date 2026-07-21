@@ -83,7 +83,7 @@ export default async function WithdrawPage() {
                 <Wifi className="w-5 h-5 text-white/40 rotate-90" />
               </div>
               <div className="text-right">
-                <p className="text-[10px] text-white/40 font-medium tracking-widest">BREAKOUT</p>
+                <p className="text-[10px] text-white/40 font-medium tracking-widest">MME Music</p>
                 <p className="text-white font-bold text-sm tracking-wider">PLATINUM</p>
               </div>
             </div>

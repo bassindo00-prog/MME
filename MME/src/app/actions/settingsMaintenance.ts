@@ -23,7 +23,7 @@ export async function saveMaintenanceSettingsAction(formData: FormData) {
     const title = (formData.get("title") as string) || "Mohon Maaf";
     const message =
       (formData.get("message") as string) ||
-      "Maaf, hari ini operasional BREAKOUT.ID sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan.";
+      "Maaf, hari ini operasional MME Music sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan.";
     const start = (formData.get("start") as string) || "";
     const end = (formData.get("end") as string) || "";
     const type = (formData.get("type") as string) || "system";

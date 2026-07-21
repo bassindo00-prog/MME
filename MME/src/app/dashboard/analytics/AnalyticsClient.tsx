@@ -460,7 +460,7 @@ export function AnalyticsClient({ data, user }: { data: AnalyticsData; user: any
 
       {/* Footer */}
       <div className="mt-12 text-center text-xs" style={{ color: "#70758F" }}>
-        © 2025 BreakoutID Distribution. All rights reserved. · Made with 💜 for independent artists
+        © 2025 MME MusicID Distribution. All rights reserved. · Made with 💜 for independent artists
       </div>
     </div>
   );

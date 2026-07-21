@@ -56,7 +56,7 @@ export function AdminOverviewClient({ data }: { data: OverviewData }) {
           {/* Header */}
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-medium text-slate-800">BreakoutFlow</h1>
+              <h1 className="text-3xl font-medium text-slate-800">MME MusicFlow</h1>
               <p className="text-slate-500 text-sm">Start managing your platform</p>
             </div>
             <div className="flex items-center gap-4 text-sm font-medium text-slate-700 bg-white/40 px-4 py-2 rounded-full backdrop-blur-md">

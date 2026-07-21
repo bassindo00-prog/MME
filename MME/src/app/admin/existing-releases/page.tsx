@@ -7,7 +7,7 @@ import DeleteExistingReleaseButton from "./DeleteExistingReleaseButton";
 const prisma = new PrismaClient();
 
 export const metadata = {
-  title: "Existing Release | Admin BREAKOUT.ID",
+  title: "Existing Release | Admin MME Music",
 };
 
 function StatusBadge({ status }: { status: string }) {
@@ -52,7 +52,7 @@ export default async function ExistingReleasesPage({
               Existing Release
             </h1>
             <p className="text-gray-500 text-sm">
-              Catalog yang sudah pernah dirilis sebelum menggunakan BREAKOUT.ID.
+              Catalog yang sudah pernah dirilis sebelum menggunakan MME Music.
               <span className="ml-2 font-semibold text-gray-700">{releases.length} release diimport</span>
             </p>
           </div>

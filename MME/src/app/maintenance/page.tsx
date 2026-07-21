@@ -43,7 +43,7 @@ export default async function MaintenancePage() {
   const bgVideoSetting = await prisma.settings.findUnique({ where: { key: "maintenance_bg_video" } });
 
   const title = titleSetting?.value || "Mohon Maaf";
-  const message = messageSetting?.value || "Maaf, hari ini operasional BREAKOUT.ID sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan.";
+  const message = messageSetting?.value || "Maaf, hari ini operasional MME Music sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan.";
   const startVal = startSetting?.value;
   const endVal = endSetting?.value;
   const maintenanceType = typeSetting?.value || "system";
@@ -104,7 +104,7 @@ export default async function MaintenancePage() {
         {/* Logo */}
         <div className="w-40 h-16 mb-8 relative flex items-center justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={maintenanceLogo} alt="BREAKOUT.ID" className="max-w-full max-h-full object-contain" />
+          <img src={maintenanceLogo} alt="MME Music" className="max-w-full max-h-full object-contain" />
         </div>
 
         {/* Animated Icon */}
@@ -163,7 +163,7 @@ export default async function MaintenancePage() {
         </div>
 
         <div className="text-xs text-white/30 font-medium tracking-wide">
-          © {new Date().getFullYear()} BREAKOUT.ID. All rights reserved.
+          © {new Date().getFullYear()} MME Music. All rights reserved.
         </div>
       </div>
     </main>

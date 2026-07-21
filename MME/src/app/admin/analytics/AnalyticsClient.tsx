@@ -47,7 +47,7 @@ export default function AdminAnalyticsClient({ data }: { data: AnalyticsData }) 
       {/* Header */}
       <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 mb-1">Breakout Analytics</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 mb-1">MME Music Analytics</h1>
           <p className="text-gray-500 font-medium">Your platform performance & revenue updates <ChevronDown className="inline w-4 h-4" /></p>
         </div>
         <div className="flex items-center gap-4 bg-white px-4 py-2 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100">

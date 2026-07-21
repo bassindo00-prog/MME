@@ -221,7 +221,7 @@ export function UploadForm({ artists, userId }: { artists: any[]; userId: string
                   value={newArtistName}
                   onChange={(e) => setNewArtistName(e.target.value)}
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 outline-none focus:border-[#00F0FF] text-white"
-                  placeholder="e.g. Breakout Band"
+                  placeholder="e.g. MME Music Band"
                 />
               </div>
               <div className="flex gap-3 pt-2">

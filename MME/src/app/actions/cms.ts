@@ -146,7 +146,7 @@ export type CMSData = {
 
 const defaultCMSData: CMSData = {
   seo: {
-    title: "Breakout Music Distribution",
+    title: "MME Music Distribution",
     description: "Distribute your music worldwide to 150+ platforms.",
     keywords: "music, distribution, spotify, apple music, breakout",
   },
@@ -168,13 +168,13 @@ const defaultCMSData: CMSData = {
     backgroundUrl: "",
   },
   about: {
-    title: "Tentang Breakout",
-    description: "Breakout adalah agregator distribusi musik digital terbaik untuk musisi independen. Kami menyalurkan karya Anda ke seluruh dunia tanpa biaya tersembunyi.",
+    title: "Tentang MME Music",
+    description: "MME Music adalah agregator distribusi musik digital terbaik untuk musisi independen. Kami menyalurkan karya Anda ke seluruh dunia tanpa biaya tersembunyi.",
     imageUrl: "",
     isActive: true,
   },
   aboutLabel: {
-    title: "About Breakout Music Record",
+    title: "About MME Music",
     description: "We are more than just a label. We are a movement dedicated to pushing the boundaries of sound and giving independent artists a global stage.",
     vision: "To be the leading platform for independent artists globally, breaking barriers and redefining the music industry.",
     mission: "Providing top-tier distribution, marketing, and support to artists so they can focus on what they do best: creating music.",
@@ -256,18 +256,18 @@ const defaultCMSData: CMSData = {
     }
   ],
   testimonials: [
-    { id: "1", name: "John Doe", role: "Indie Artist", content: "Breakout sangat membantu karir musik saya!", avatarUrl: "" }
+    { id: "1", name: "John Doe", role: "Indie Artist", content: "MME Music sangat membantu karir musik saya!", avatarUrl: "" }
   ],
   partners: [],
   contact: {
-    email: "support@breakoutmusic.online",
+    email: "support@mmemusic.com",
     whatsapp: "+6281234567890",
     address: "Jakarta, Indonesia",
     isActive: true,
   },
   footer: {
-    aboutText: "Breakout Music Distribution. Empowering independent artists worldwide.",
-    copyright: "© 2026 Breakout. All rights reserved."
+    aboutText: "MME Music Distribution. Empowering independent artists worldwide.",
+    copyright: "© 2026 MME Music. All rights reserved."
   },
   socialMedia: {
     instagram: "https://instagram.com/",
@@ -275,7 +275,7 @@ const defaultCMSData: CMSData = {
     youtube: "https://youtube.com/",
     spotify: "https://spotify.com/",
     whatsapp: "+6281234567890",
-    email: "support@breakoutmusic.online",
+    email: "support@mmemusic.com",
   },
   stats: {
     totalArtists: null,

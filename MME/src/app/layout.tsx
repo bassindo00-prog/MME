@@ -5,17 +5,17 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.breakoutmusic.online"),
+  metadataBase: new URL("https://www.mmemusic.com"),
   title: {
-    default: "BREAKOUT.ID - Premium Music Distribution",
-    template: "%s | BREAKOUT.ID"
+    default: "MME Music - Premium Music Distribution",
+    template: "%s | MME Music"
   },
   description: "Distribute your music worldwide to Spotify, Apple Music, TikTok, and 150+ platforms.",
   openGraph: {
-    title: "BREAKOUT.ID - Premium Music Distribution",
+    title: "MME Music - Premium Music Distribution",
     description: "Distribute your music worldwide to Spotify, Apple Music, TikTok, and 150+ platforms.",
-    url: "https://www.breakoutmusic.online",
-    siteName: "BREAKOUT.ID",
+    url: "https://www.mmemusic.com",
+    siteName: "MME Music",
     locale: "id_ID",
     type: "website",
   },

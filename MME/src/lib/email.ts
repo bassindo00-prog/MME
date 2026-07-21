@@ -1,7 +1,7 @@
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_key');
-const fromEmail = process.env.RESEND_FROM_EMAIL || 'BREAKOUT <noreply@breakoutmusic.online>';
+const fromEmail = process.env.RESEND_FROM_EMAIL || 'MME Music <noreply@mmemusic.com>';
 
 const BASE_STYLES = `
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -42,14 +42,14 @@ function generateEmailHtml(title: string, content: string) {
     <div style="${BASE_STYLES}">
       <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
         <div style="${HEADER_STYLES}">
-          <h1 style="${LOGO_TEXT_STYLES}">BREAKOUT.ID</h1>
+          <h1 style="${LOGO_TEXT_STYLES}">MME Music</h1>
         </div>
         <h2 style="color: #111827; font-size: 20px; font-weight: 700; margin-bottom: 20px;">${title}</h2>
         <div style="color: #4b5563; font-size: 16px;">
           ${content}
         </div>
         <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 14px; text-align: center;">
-          <p>&copy; ${new Date().getFullYear()} BREAKOUT.ID. All rights reserved.</p>
+          <p>&copy; ${new Date().getFullYear()} MME Music. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -57,14 +57,14 @@ function generateEmailHtml(title: string, content: string) {
 }
 
 export async function sendAccountApprovedEmail(to: string, name: string) {
-  const subject = 'Akun BREAKOUT Disetujui';
+  const subject = 'Akun MME Music Disetujui';
   const html = generateEmailHtml(
-    'Selamat Datang di BREAKOUT!',
+    'Selamat Datang di MME Music!',
     `
       <p>Halo ${name},</p>
       <p>Selamat! Akun artis Anda telah <strong>disetujui</strong> oleh tim kami.</p>
       <p>Anda sekarang sudah bisa login ke dashboard dan mulai mendistribusikan musik Anda ke seluruh platform digital (Spotify, Apple Music, YouTube, dll).</p>
-      <a href="https://breakoutmusic.online/login" style="${BUTTON_STYLES}">Login ke Dashboard</a>
+      <a href="https://mmemusic.com/login" style="${BUTTON_STYLES}">Login ke Dashboard</a>
     `
   );
 
@@ -83,12 +83,12 @@ export async function sendAccountApprovedEmail(to: string, name: string) {
 }
 
 export async function sendAccountRejectedEmail(to: string, name: string, reason: string) {
-  const subject = 'Pendaftaran BREAKOUT Ditolak';
+  const subject = 'Pendaftaran MME Music Ditolak';
   const html = generateEmailHtml(
     'Status Pendaftaran Akun',
     `
       <p>Halo ${name},</p>
-      <p>Terima kasih atas ketertarikan Anda untuk mendistribusikan musik bersama BREAKOUT.</p>
+      <p>Terima kasih atas ketertarikan Anda untuk mendistribusikan musik bersama MME Music.</p>
       <p>Mohon maaf, saat ini kami <strong>belum dapat menyetujui</strong> pendaftaran akun Anda.</p>
       <div style="background-color: #fee2e2; color: #991b1b; padding: 16px; border-radius: 8px; margin: 20px 0;">
         <strong>Alasan penolakan:</strong><br/>
@@ -120,8 +120,8 @@ export async function sendReleaseApprovedEmail(to: string, name: string, title: 
       <p>Halo ${name},</p>
       <p>Kabar baik! Rilisan Anda yang berjudul <strong>"${title}"</strong> telah lolos proses review dan <strong>disetujui</strong>.</p>
       <p>Tim kami akan segera memproses perilisan musik Anda ke berbagai platform digital (DSP) sesuai dengan tanggal rilis yang telah Anda tentukan.</p>
-      <p>Pantau terus status rilisan Anda melalui dashboard BREAKOUT.</p>
-      <a href="https://breakoutmusic.online/dashboard/releases" style="${BUTTON_STYLES}">Lihat Dashboard</a>
+      <p>Pantau terus status rilisan Anda melalui dashboard MME Music.</p>
+      <a href="https://mmemusic.com/dashboard/releases" style="${BUTTON_STYLES}">Lihat Dashboard</a>
     `
   );
 
@@ -152,7 +152,7 @@ export async function sendReleaseRejectedEmail(to: string, name: string, title: 
         ${reason}
       </div>
       <p>Silakan perbaiki rilisan Anda sesuai dengan alasan di atas, kemudian Anda dapat mencoba mengunggahnya kembali melalui dashboard.</p>
-      <a href="https://breakoutmusic.online/dashboard/upload" style="${BUTTON_STYLES}">Upload Ulang Rilisan</a>
+      <a href="https://mmemusic.com/dashboard/upload" style="${BUTTON_STYLES}">Upload Ulang Rilisan</a>
     `
   );
 
@@ -171,17 +171,17 @@ export async function sendReleaseRejectedEmail(to: string, name: string, title: 
 }
 
 export async function sendNewMessageNotification(to: string, name: string, messageSubject: string) {
-  const subject = 'Pesan Baru dari Admin BREAKOUT';
+  const subject = 'Pesan Baru dari Admin MME Music';
   const html = generateEmailHtml(
     'Anda Memiliki Pesan Baru',
     `
       <p>Halo ${name},</p>
-      <p>Anda memiliki pesan baru dari tim Admin BREAKOUT dengan subjek:</p>
+      <p>Anda memiliki pesan baru dari tim Admin MME Music dengan subjek:</p>
       <div style="background-color: #f3f4f6; color: #111827; padding: 16px; border-radius: 8px; margin: 20px 0;">
         <strong>${messageSubject}</strong>
       </div>
       <p>Silakan login ke dashboard dan buka menu <strong>Inbox</strong> untuk membaca pesan selengkapnya dan mengunduh lampiran (jika ada).</p>
-      <a href="https://breakoutmusic.online/dashboard/inbox" style="${BUTTON_STYLES}">Buka Inbox</a>
+      <a href="https://mmemusic.com/dashboard/inbox" style="${BUTTON_STYLES}">Buka Inbox</a>
     `
   );
 
@@ -201,7 +201,7 @@ export async function sendNewMessageNotification(to: string, name: string, messa
 
 // BATCH SENDING
 export async function sendNewMessageNotificationBatch(users: {email: string, name: string}[], messageSubject: string) {
-  const subject = 'Pesan Baru dari Admin BREAKOUT';
+  const subject = 'Pesan Baru dari Admin MME Music';
   
   const emails = users.map(user => ({
     from: fromEmail,
@@ -211,12 +211,12 @@ export async function sendNewMessageNotificationBatch(users: {email: string, nam
       'Anda Memiliki Pesan Baru',
       `
         <p>Halo ${user.name},</p>
-        <p>Anda memiliki pesan baru dari tim Admin BREAKOUT dengan subjek:</p>
+        <p>Anda memiliki pesan baru dari tim Admin MME Music dengan subjek:</p>
         <div style="background-color: #f3f4f6; color: #111827; padding: 16px; border-radius: 8px; margin: 20px 0;">
           <strong>${messageSubject}</strong>
         </div>
         <p>Silakan login ke dashboard dan buka menu <strong>Inbox</strong> untuk membaca pesan selengkapnya dan mengunduh lampiran (jika ada).</p>
-        <a href="https://breakoutmusic.online/dashboard/inbox" style="${BUTTON_STYLES}">Buka Inbox</a>
+        <a href="https://mmemusic.com/dashboard/inbox" style="${BUTTON_STYLES}">Buka Inbox</a>
       `
     )
   }));
@@ -242,7 +242,7 @@ export async function sendNewMessageNotificationBatch(users: {email: string, nam
 }
 
 export async function sendOtpEmail(to: string, otp: string) {
-  const subject = 'Kode Verifikasi OTP - BREAKOUT MUSIC';
+  const subject = 'Kode Verifikasi OTP - MME Music';
   const html = generateEmailHtml(
     'Verifikasi Email Anda',
     `
@@ -283,8 +283,8 @@ export async function sendWithdrawalPaidEmail(to: string, name: string) {
       <p>Halo ${name},</p>
       <p>Kabar gembira! Permintaan penarikan royalti (withdrawal) Anda <strong>telah berhasil kami bayarkan</strong>.</p>
       <p>Silakan periksa saldo di rekening bank atau e-wallet yang Anda daftarkan.</p>
-      <p>Terima kasih telah mempercayakan distribusi musik Anda kepada BREAKOUT.</p>
-      <a href="https://breakoutmusic.online/dashboard/withdraw" style="${BUTTON_STYLES}">Lihat Riwayat Penarikan</a>
+      <p>Terima kasih telah mempercayakan distribusi musik Anda kepada MME Music.</p>
+      <a href="https://mmemusic.com/dashboard/withdraw" style="${BUTTON_STYLES}">Lihat Riwayat Penarikan</a>
     `
   );
 
@@ -317,7 +317,7 @@ export async function sendContractToAdminEmail(data: {userId: string; name: stri
         <p><strong>Alamat:</strong> ${data.address}</p>
         <p><strong>User ID:</strong> ${data.userId}</p>
       </div>
-      <p>Artis tersebut <strong>Telah Menyetujui</strong> secara digital seluruh klausul Perjanjian Distribusi Digital BREAKOUT MUSIC RECORD dengan pembagian hasil 72.5% (Artis) dan 27.5% (Label).</p>
+      <p>Artis tersebut <strong>Telah Menyetujui</strong> secara digital seluruh klausul Perjanjian Distribusi Digital MME Music dengan pembagian hasil 72.5% (Artis) dan 27.5% (Label).</p>
       <p>Email ini bertindak sebagai bukti persetujuan digital yang sah.</p>
     `
   );

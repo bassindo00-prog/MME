@@ -66,8 +66,8 @@ export function DashboardSidebar({
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-16 fundflow-glass border-b border-white/20 flex items-center justify-between px-4 z-40">
         <div className="flex items-center gap-2">
-          <img src={brandLogo} alt="Breakout Logo" className="w-8 h-8 object-contain" />
-          <span className="font-bold tracking-tighter text-gray-900 drop-shadow-sm">BREAKOUT.ID</span>
+          <img src={brandLogo} alt="MME Music Logo" className="w-8 h-8 object-contain" />
+          <span className="font-bold tracking-tighter text-gray-900 drop-shadow-sm">MME Music</span>
         </div>
         <button 
           onClick={() => setIsOpen(true)}
@@ -93,8 +93,8 @@ export function DashboardSidebar({
       >
         <div className="h-24 flex items-center justify-between px-8">
           <Link href="/dashboard" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-            <img src={brandLogo} alt="Breakout Logo" className="w-8 h-8 object-contain" />
-            <span className="font-bold text-xl tracking-tighter text-gray-900">BREAKOUT</span>
+            <img src={brandLogo} alt="MME Music Logo" className="w-8 h-8 object-contain" />
+            <span className="font-bold text-xl tracking-tighter text-gray-900">MME Music</span>
           </Link>
           <button 
             className="md:hidden text-gray-500 hover:text-gray-900"

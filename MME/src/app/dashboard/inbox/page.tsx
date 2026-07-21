@@ -19,7 +19,7 @@ export default async function UserInboxPage() {
     <div className="animate-fade-in max-w-5xl mx-auto pb-10">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Inbox</h1>
-        <p className="text-gray-500">Messages and announcements from BREAKOUT Admin.</p>
+        <p className="text-gray-500">Messages and announcements from MME Music Admin.</p>
       </div>
 
       <InboxMessageList messages={receivedMessages} />

@@ -79,7 +79,7 @@ export function Navbar({ cms }: { cms: any }) {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0B0F1A]/80 backdrop-blur-md border-b border-white/10 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <img src="/logo.png" alt="Breakout Logo" className="h-10 w-auto" />
+          <img src="/logo.png" alt="MME Music Logo" className="h-10 w-auto" />
         </Link>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">

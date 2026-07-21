@@ -61,7 +61,7 @@ export function MaintenanceSettingsForm({ initialData, brandLogo }: MaintenanceS
   const [title, setTitle] = useState(initialData.maintenance_title || "Mohon Maaf");
   const [message, setMessage] = useState(
     initialData.maintenance_message || 
-    "Maaf, hari ini operasional BREAKOUT.ID sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan."
+    "Maaf, hari ini operasional MME Music sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan."
   );
   const [start, setStart] = useState(toLocalDatetimeString(initialData.maintenance_start) || "");
   const [end, setEnd] = useState(toLocalDatetimeString(initialData.maintenance_end) || "");
@@ -296,7 +296,7 @@ export function MaintenanceSettingsForm({ initialData, brandLogo }: MaintenanceS
                 <label className="text-xs font-bold text-gray-600 uppercase">Pesan Maintenance</label>
                 <button 
                   type="button"
-                  onClick={() => setMessage("Maaf, hari ini operasional BREAKOUT.ID sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan.")}
+                  onClick={() => setMessage("Maaf, hari ini operasional MME Music sedang libur. Silakan kembali lagi sesuai jadwal yang telah ditentukan.")}
                   className="text-xs text-blue-600 font-bold hover:underline"
                 >
                   Reset Default
@@ -438,7 +438,7 @@ export function MaintenanceSettingsForm({ initialData, brandLogo }: MaintenanceS
               {/* Logo */}
               <div className="w-32 h-10 mb-4 flex items-center justify-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={previewLogoUrl} alt="BREAKOUT.ID" className="max-w-full max-h-full object-contain" />
+                <img src={previewLogoUrl} alt="MME Music" className="max-w-full max-h-full object-contain" />
               </div>
 
               {/* Animated Icon */}

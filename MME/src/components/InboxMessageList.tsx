@@ -74,7 +74,7 @@ export function InboxMessageList({ messages }: { messages: any[] }) {
               <div>
                 <h2 className="text-xl font-bold text-gray-900 mb-2">{selectedMessage.message.subject}</h2>
                 <div className="flex items-center gap-4 text-sm text-gray-500">
-                  <span className="font-medium">From: BREAKOUT Admin</span>
+                  <span className="font-medium">From: MME Music Admin</span>
                   <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {new Date(selectedMessage.message.createdAt).toLocaleString()}</span>
                 </div>
               </div>

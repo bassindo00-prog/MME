@@ -14,9 +14,9 @@ function SuccessContent() {
   const whatsapp = searchParams.get("whatsapp") || "-";
 
   const adminNumber = "6281330923740";
-  const message = `Halo Admin BREAKOUT,
+  const message = `Halo Admin MME Music,
 
-Saya telah berhasil membuat akun di BREAKOUT MUSIC.
+Saya telah berhasil membuat akun di MME Music.
 
 Nama:
 ${name}
@@ -44,7 +44,7 @@ Terima kasih.`;
         <h1 className="text-3xl font-bold mb-3">🎉 Pendaftaran Berhasil</h1>
         <p className="text-gray-300 text-base leading-relaxed">
           Akun Anda telah berhasil dibuat.<br />
-          Silakan minta persetujuan kepada Admin BREAKOUT agar akun Anda dapat diaktifkan.
+          Silakan minta persetujuan kepada Admin MME Music agar akun Anda dapat diaktifkan.
         </p>
       </div>
 

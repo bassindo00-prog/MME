@@ -342,7 +342,7 @@ export default async function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="md:col-span-2">
-              <img src="/logo.png" alt="Breakout Logo" className="h-10 w-auto mb-6 opacity-80" />
+              <img src="/logo.png" alt="MME Music Logo" className="h-10 w-auto mb-6 opacity-80" />
               <p className="text-gray-400 max-w-sm mb-8">{cms.footer.aboutText}</p>
               
               <div className="flex gap-4">

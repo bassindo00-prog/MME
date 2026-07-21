@@ -634,7 +634,7 @@ export function StreamingClient({ allTracks, globalStats, globalDailyStreams, gl
 
           {/* Footer */}
           <div className="text-center text-xs text-gray-400 pt-6 border-t border-gray-100 mt-6">
-            © 2025 BREAKOUT Music Distribution · Analytics Streaming · Data diperbarui setiap hari
+            © 2025 MME Music Music Distribution · Analytics Streaming · Data diperbarui setiap hari
           </div>
         </div>{/* end right col */}
       </div>{/* end main layout */}
