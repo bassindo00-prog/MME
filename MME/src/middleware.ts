@@ -5,14 +5,7 @@ import type { NextRequest } from "next/server"
 export default auth(async (req) => {
   const { nextUrl } = req
 
-  // Domain Lock Redirect to custom domain (except for local development)
-  const host = req.headers.get("host") || "";
-  const isLocal = host.includes("localhost") || host.includes("127.0.0.1") || host.includes("192.168.");
-  
-  if (!isLocal && host !== "breakoutmusic.online" && host !== "www.breakoutmusic.online") {
-    const redirectUrl = new URL(nextUrl.pathname + nextUrl.search, "https://breakoutmusic.online");
-    return NextResponse.redirect(redirectUrl);
-  }
+
 
   const isLoggedIn = !!req.auth?.user
   // @ts-ignore
