@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
+import { revalidatePath } from "next/cache";
 
 const prisma = new PrismaClient();
 
@@ -30,11 +31,11 @@ export async function POST(req: Request) {
       let statusText = "";
 
       if (action === "take") {
-        newStatus = "PROCESSING"; // In Progress
-        statusText = "✅ Diambil & In Progress";
+        newStatus = "APPROVED"; // Approved
+        statusText = "✅ Disetujui (APPROVED)";
       } else if (action === "rej_") {
         newStatus = "REJECTED"; // Rejected
-        statusText = "❌ Ditolak";
+        statusText = "❌ Ditolak (REJECTED)";
       }
 
       if (newStatus && releaseId) {
@@ -43,6 +44,11 @@ export async function POST(req: Request) {
           where: { id: releaseId },
           data: { status: newStatus as any }
         });
+
+        // Refresh data in dashboards
+        revalidatePath("/dashboard");
+        revalidatePath("/dashboard/releases");
+        revalidatePath("/admin/releases");
 
         if (botToken) {
           // 1. Answer the callback query to stop the loading spinner on the button
