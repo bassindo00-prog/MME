@@ -302,8 +302,6 @@ export function AdminStreamingClient({ data }: Props) {
             {[
               { label: "Total Streams",     val: fmtNum(currentStats.totalStreams),     icon: Play,       bg: "#F5F3FF", c: "#7C3AED" },
               { label: "Revenue",           val: fmtRp(currentStats.revenue),           icon: DollarSign, bg: "#ECFDF5", c: "#10B981" },
-              { label: "Monthly Listeners", val: fmtNum(currentStats.listeners),        icon: Users,      bg: "#EFF6FF", c: "#3B82F6" },
-              { label: "Followers / Saves", val: fmtNum(currentStats.followers),        icon: Heart,      bg: "#FFF1F2", c: "#E11D48" },
             ].map(c => (
               <div key={c.label} className="bg-white p-5 rounded-[24px] border border-gray-100 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:-translate-y-1 transition group">
                 <div className="flex items-center justify-between mb-3">

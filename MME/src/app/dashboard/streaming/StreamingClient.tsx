@@ -265,13 +265,7 @@ export function StreamingClient({ allTracks, globalStats, globalDailyStreams, gl
   // Stat cards
   const statCards = [
     { label: "Total Streams",     value: fmtNum(currentStats.totalStreams),      icon: Play,       iconBg: "#EDE9FF", iconColor: "#7C3AED", change: 12.4  },
-    { label: "Monthly Listeners", value: fmtNum(currentStats.monthlyListeners),  icon: Users,      iconBg: "#E0F2FE", iconColor: "#0284C7", change: 10.7  },
-    { label: "Followers",         value: fmtNum(currentStats.followers),         icon: Heart,      iconBg: "#FFF1F2", iconColor: "#E11D48", change:  5.2  },
-    { label: "Saves",             value: fmtNum(currentStats.saves),             icon: BookOpen,   iconBg: "#FFF7ED", iconColor: "#EA580C", change:  8.3  },
     { label: "Revenue",           value: fmtRp(currentStats.revenue),            icon: DollarSign, iconBg: "#F0FDF4", iconColor: "#16A34A", change: 14.1  },
-    { label: "Watch Time",        value: currentStats.watchTimeHours.toLocaleString() + "h", icon: Clock, iconBg: "#EFF6FF", iconColor: "#2563EB", change: 15.2 },
-    { label: "Total Playlist",    value: fmtNum(currentStats.totalPlaylists),    icon: ListMusic,  iconBg: "#FAF5FF", iconColor: "#9333EA", change:  3.8  },
-    { label: "Active Releases",   value: String(currentStats.activeReleases),    icon: Disc,       iconBg: "#EDE9FF", iconColor: "#7C3AED", change:  2.0  },
   ];
 
   return (
@@ -331,15 +325,7 @@ export function StreamingClient({ allTracks, globalStats, globalDailyStreams, gl
             ))}
           </div>
 
-          <button className="flex items-center gap-1.5 px-3 py-2 bg-white border border-gray-200 rounded-xl text-xs font-semibold text-gray-600 hover:border-purple-300 hover:text-purple-600 transition shadow-sm">
-            <Download className="w-3.5 h-3.5" /> Export CSV
-          </button>
-          <button className="flex items-center gap-1.5 px-3 py-2 bg-white border border-gray-200 rounded-xl text-xs font-semibold text-gray-600 hover:border-purple-300 hover:text-purple-600 transition shadow-sm">
-            <Download className="w-3.5 h-3.5" /> Export PDF
-          </button>
-          <button className="flex items-center gap-1.5 px-3 py-2 bg-purple-50 border border-purple-200 rounded-xl text-xs font-semibold text-purple-600 hover:bg-purple-100 transition shadow-sm">
-            <RefreshCw className="w-3.5 h-3.5" /> Refresh
-          </button>
+
         </div>
       </div>
 
